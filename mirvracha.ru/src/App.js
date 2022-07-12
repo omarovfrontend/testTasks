@@ -1,9 +1,12 @@
 import './App.css';
+import MainPage from './components/MainPage/MainPage';
 
 function App() {
   return (
     <div className="App">
-      <div>Champ!</div>
+      <div className="container">
+        <MainPage />
+      </div>
     </div>
   );
 }
