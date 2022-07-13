@@ -2,6 +2,7 @@ import React from 'react';
 import style from './MainPage.module.css';
 import parent from '../../images/parent.png';
 import child from '../../images/child.png';
+import patient from '../../images/patient.png';
 
 function MainPage() {
   return (
@@ -60,6 +61,27 @@ function MainPage() {
           {' '}
           <span className={style.symptoms__more}>(нажмите на любую иконку и узнайте больше)</span>
         </h3>
+      </div>
+
+      <div className={style.patient__information}>
+        <img src={patient} alt="PatientInfo" />
+        <p className={style.patient__text}>Взрослый</p>
+        <span className={`${style.icon} ${style.icon1}`} />
+        <span className={`${style.plus} ${style.plus1}`} />
+        <span className={`${style.icon} ${style.icon2}`} />
+        <span className={`${style.plus} ${style.plus2}`} />
+        <span className={`${style.icon} ${style.icon3}`} />
+        <span className={`${style.plus} ${style.plus3}`} />
+        <span className={`${style.icon} ${style.icon4}`} />
+        <span className={`${style.plus} ${style.plus4}`} />
+        <span className={`${style.icon} ${style.icon5}`} />
+        <span className={`${style.plus} ${style.plus5}`} />
+        <span className={`${style.icon} ${style.icon6}`} />
+        <span className={`${style.plus} ${style.plus6}`} />
+        <span className={`${style.icon} ${style.icon7}`} />
+        <span className={`${style.plus} ${style.plus7}`} />
+        <span className={`${style.icon} ${style.icon8}`} />
+        <span className={`${style.plus} ${style.plus8}`} />
       </div>
     </div>
   );
