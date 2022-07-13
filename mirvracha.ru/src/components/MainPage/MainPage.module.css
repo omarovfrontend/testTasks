@@ -95,6 +95,7 @@
 }
 
 .patient__information img {
+  width: 28%;
   opacity: 0.4;
 }
 
@@ -352,4 +353,18 @@
   font-size: 18px;
   line-height: 22px;
   color: #223867;
+}
+
+@media screen and (max-width: 960px) {
+  .page__info {
+    margin-bottom: 20px;
+  }
+
+  .page__people {
+    margin-bottom: 10px;
+  }
+
+  .symptoms {
+    margin-bottom: 200px;
+  }
 }
