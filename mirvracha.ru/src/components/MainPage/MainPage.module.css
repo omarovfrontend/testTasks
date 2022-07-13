@@ -95,7 +95,7 @@
 }
 
 .patient__information img {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .patient__text {
@@ -131,8 +131,8 @@
 .plus1 {
   width: 41px;
   height: 41px;
-  background-image: url('../../images/plus.svg');
-  background-color: #1A6EA0;
+  background-image: url("../../images/plus.svg");
+  background-color: #1a6ea0;
   border-radius: 50%;
   top: -25%;
   left: 45%;
@@ -149,8 +149,8 @@
 .plus2 {
   width: 41px;
   height: 41px;
-  background-image: url('../../images/plus.svg');
-  background-color: #1A6EA0;
+  background-image: url("../../images/plus.svg");
+  background-color: #1a6ea0;
   border-radius: 50%;
   top: -15%;
   left: 61.5%;
@@ -167,8 +167,8 @@
 .plus3 {
   width: 41px;
   height: 41px;
-  background-image: url('../../images/plus.svg');
-  background-color: #1A6EA0;
+  background-image: url("../../images/plus.svg");
+  background-color: #1a6ea0;
   border-radius: 50%;
   top: 20%;
   left: 66%;
@@ -185,8 +185,8 @@
 .plus4 {
   width: 41px;
   height: 41px;
-  background-image: url('../../images/plus.svg');
-  background-color: #1A6EA0;
+  background-image: url("../../images/plus.svg");
+  background-color: #1a6ea0;
   border-radius: 50%;
   top: 50%;
   left: 61.5%;
@@ -204,8 +204,8 @@
 .plus5 {
   width: 41px;
   height: 41px;
-  background-image: url('../../images/plus.svg');
-  background-color: #1A6EA0;
+  background-image: url("../../images/plus.svg");
+  background-color: #1a6ea0;
   border-radius: 50%;
   top: 59%;
   left: 45%;
@@ -223,8 +223,8 @@
 .plus6 {
   width: 41px;
   height: 41px;
-  background-image: url('../../images/plus.svg');
-  background-color: #1A6EA0;
+  background-image: url("../../images/plus.svg");
+  background-color: #1a6ea0;
   border-radius: 50%;
   top: 51%;
   left: 29%;
@@ -241,8 +241,8 @@
 .plus7 {
   width: 41px;
   height: 41px;
-  background-image: url('../../images/plus.svg');
-  background-color: #1A6EA0;
+  background-image: url("../../images/plus.svg");
+  background-color: #1a6ea0;
   border-radius: 50%;
   top: 19%;
   left: 24%;
@@ -259,9 +259,97 @@
 .plus8 {
   width: 41px;
   height: 41px;
-  background-image: url('../../images/plus.svg');
-  background-color: #1A6EA0;
+  background-image: url("../../images/plus.svg");
+  background-color: #1a6ea0;
   border-radius: 50%;
   top: -14%;
   left: 27.5%;
+}
+
+.icon1:hover::after {
+  content: "Сколиоз";
+  position: relative;
+  top: -30%;
+  left: 20%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+}
+
+.icon2:hover::after {
+  content: "Ограниченная способность поднимать руки и переносить предметы";
+  position: relative;
+  top: 5%;
+  left: 130%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+}
+
+.icon3:hover::after {
+  content: "Нарушения жевания и глотания";
+  position: relative;
+  top: 20%;
+  left: 130%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+}
+
+.icon4:hover::after {
+  content: "Дыхательная недостаточность/ респираторная дисфункция";
+  position: relative;
+  top: 5%;
+  left: 130%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+}
+
+.icon5:hover::after {
+  content: "Неспособность бегать, изменение походки";
+  position: relative;
+  top: 120%;
+  left: 5%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+}
+
+.icon6:hover::after {
+  content: "Контрактура суставов";
+  position: relative;
+  top: 30%;
+  left: -130%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+}
+
+.icon7:hover::after {
+  content: "Вывих бедра";
+  position: relative;
+  top: 30%;
+  left: -80%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+}
+
+.icon8:hover::after {
+  content: "Утомляемость";
+  position: relative;
+  top: 40%;
+  left: -140%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
 }
