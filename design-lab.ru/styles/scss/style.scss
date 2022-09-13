@@ -75,7 +75,25 @@ body {
     font-weight: 500;
     line-height: 32px;
     color: #333;
-    transition: color .3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+
+    &-main,
+    &-test {
+      text-decoration: none;
+      margin-left: 8px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #52575f;
+
+      &:first-child {
+        margin-left: 0;
+        margin-right: 8px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
 
     &:first-child {
       margin-left: 0;
@@ -85,8 +103,24 @@ body {
       color: #0066cc;
     }
 
-    &_active {
+    &-active {
       color: #0066cc;
     }
+  }
+}
+
+.test {
+  margin-bottom: 94px;
+
+  &__nav {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #333;
   }
 }

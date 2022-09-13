@@ -75,12 +75,40 @@ body {
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
+.nav__link-main, .nav__link-test {
+  text-decoration: none;
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #52575f;
+}
+.nav__link-main:first-child, .nav__link-test:first-child {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.nav__link-main:hover, .nav__link-test:hover {
+  text-decoration: underline;
+}
 .nav__link:first-child {
   margin-left: 0;
 }
 .nav__link:hover {
   color: #0066cc;
 }
-.nav__link_active {
+.nav__link-active {
   color: #0066cc;
+}
+
+.test {
+  margin-bottom: 94px;
+}
+.test__nav {
+  margin-bottom: 15px;
+}
+.test__title {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #333;
 }
