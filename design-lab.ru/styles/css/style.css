@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy-Regular.eot");
+  src: local("☺"), url("../../fonts/Gilroy-Regular.woff") format("woff"), url("../../fonts/Gilroy-Regular.ttf") format("truetype"), url("../../fonts/Gilroy-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy-Medium.eot");
+  src: local("☺"), url("../../fonts/Gilroy-Medium.woff") format("woff"), url("../../fonts/Gilroy-Medium.ttf") format("truetype"), url("../../fonts/Gilroy-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy-SemiBold.eot");
+  src: local("☺"), url("../../fonts/Gilroy-SemiBold.woff") format("woff"), url("../../fonts/Gilroy-SemiBold.ttf") format("truetype"), url("../../fonts/Gilroy-SemiBold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy-Bold.eot");
+  src: local("☺"), url("../../fonts/Gilroy-Bold.woff") format("woff"), url("../../fonts/Gilroy-Bold.ttf") format("truetype"), url("../../fonts/Gilroy-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+  margin-bottom: 83px;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  width: 100%;
+  max-width: 884px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav__link {
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #333;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.nav__link:first-child {
+  margin-left: 0;
+}
+.nav__link:hover {
+  color: #0066cc;
+}
+.nav__link_active {
+  color: #0066cc;
+}
