@@ -102,7 +102,7 @@
 
           <label class="form__description"
             >Название
-            <input type="text" class="form__description-input" />
+            <input type="text" class="form__description-input" required />
           </label>
 
           <div class="parameters">
@@ -149,14 +149,19 @@
             <div class="contacts__phone">
               <label class="contacts__description"
                 >Телефон
-                <input type="tel" class="contacts__phone-input" value="+7" />
+                <input
+                  type="tel"
+                  class="contacts__phone-input"
+                  value="+7"
+                  required
+                />
               </label>
             </div>
 
             <div class="contacts__email">
               <label class="contacts__description"
                 >Почта
-                <input type="email" class="contacts__email-input" />
+                <input type="email" class="contacts__email-input" required />
               </label>
             </div>
           </div>
@@ -192,7 +197,11 @@
             <div class="usability__password">
               <label class="usability__description"
                 >Пароль
-                <input type="email" class="usability__password-input" />
+                <input
+                  type="password"
+                  class="usability__password-input"
+                  required
+                />
               </label>
             </div>
           </div>
@@ -207,6 +216,8 @@
               />
             </label>
           </div>
+
+          <button type="submit" class="form__btn">Отправить заявку</button>
         </form>
       </div>
     </section>
