@@ -472,3 +472,26 @@ input[type="file"] {
     flex-direction: column;
   }
 }
+
+.wish {
+  margin-bottom: 48px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 600;
+    line-height: 24px;
+    color: #1d1d1f;
+  }
+  
+  &__description-input {
+    width: 100%;
+    height: 56px;
+    margin-top: 9px;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+  }
+}
