@@ -369,3 +369,41 @@ td {
   width: 397px;
   height: 56px;
 }
+
+.files {
+  margin-bottom: 39px;
+}
+.files__description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1f;
+  margin-bottom: 9px;
+}
+.files__inner {
+  position: relative;
+  padding: 32px 145px;
+  cursor: pointer;
+  border: 1px dashed #b9b1b1;
+  border-radius: 4px;
+}
+.files__inner span {
+  display: block;
+  max-width: 355px;
+  width: 100%;
+  line-height: 24px;
+  text-align: center;
+  color: #58585d;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=file] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  left: 0px;
+  top: 0px;
+}
