@@ -50,7 +50,7 @@
           <tr>
             <td>Стеновой паркет</td>
             <td>Ольха</td>
-            <td>13 × 78 × 300 мм</td>
+            <td>13 x 78 x 300 мм</td>
             <td>52 ₽</td>
             <td>
               <button type="button" class="table__btn">В корзину</button>
@@ -59,7 +59,7 @@
           <tr>
             <td>Стеновой паркет</td>
             <td>Ольха</td>
-            <td>13 × 78 × 600 мм</td>
+            <td>13 x 78 x 600 мм</td>
             <td>112 ₽</td>
             <td>
               <button type="button" class="table__btn">В корзину</button>
@@ -68,7 +68,7 @@
           <tr>
             <td>Доска для пола, сорт А</td>
             <td>Лиственница</td>
-            <td>27 × 134 × 2000 мм</td>
+            <td>27 x 134 x 2000 мм</td>
             <td>1062 ₽</td>
             <td>
               <button type="button" class="table__btn">В корзину</button>
@@ -77,13 +77,90 @@
           <tr>
             <td>Вагонка</td>
             <td>Термо-абаш</td>
-            <td>19 × 90 × 2000 мм</td>
+            <td>19 x 90 x 2000 мм</td>
             <td>1009 ₽</td>
             <td>
               <button type="button" class="table__btn">В корзину</button>
             </td>
           </tr>
         </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Форма</h2>
+        <p class="section__subtitle">
+          Должна иметь проверку полей: обязательное поле, формат, минимальное
+          значение. При несоответствии должна выводиться соответствующая ошибка.
+          Поле «Телефон» должен содержать маску ввода. Проверка, маска и вывод
+          ошибки должны быть сделаны на JS или JQuery, но без плагинов.
+        </p>
+
+        <form class="form">
+          <h3 class="form__title">Заказать проект</h3>
+
+          <label class="form__description"
+            >Название
+            <input type="text" class="form__description-input" />
+          </label>
+
+          <div class="parameters">
+            <div class="parameters__price">
+              <p class="parameters__description">Стоимость</p>
+              <label>
+                <input
+                  class="parameters__price-input"
+                  type="text"
+                  value="20 000 000 ₽"
+                />
+              </label>
+            </div>
+            <div class="parameters__square">
+              <p class="parameters__description">Площадь</p>
+              <label>
+                <input
+                  class="parameters__square-input"
+                  type="text"
+                  value="200 м2"
+                />
+              </label>
+            </div>
+            <div class="parameters__finish">
+              <p class="parameters__description">Отделка</p>
+              <input
+                class="parameters__finish-input"
+                type="checkbox"
+                id="highload1"
+                name="highload1"
+              />
+              <label
+                class="lb1"
+                for="highload1"
+                data-onlabel="on"
+                data-offlabel="off"
+              >
+                <span>Вайтбокс</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="contacts">
+            <div class="contacts__phone">
+              <label class="contacts__description"
+                >Телефон
+                <input type="tel" class="contacts__phone-input" value="+7" />
+              </label>
+            </div>
+
+            <div class="contacts__email">
+              <label class="contacts__description"
+                >Почта
+                <input type="email" class="contacts__email-input" />
+              </label>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
   </body>

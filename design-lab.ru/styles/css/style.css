@@ -35,9 +35,18 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #fff;
   font-family: "Gilroy", sans-serif;
   font-size: 16px;
+}
+
+input {
+  outline: none;
+  -webkit-transition: border 0.2s linear;
+  transition: border 0.2s linear;
+}
+input:focus {
+  border: 1px solid #0066cc;
 }
 
 .header {
@@ -171,4 +180,192 @@ td {
   padding-left: 30px;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.form {
+  background-color: #f5f5f7;
+  border-radius: 20px;
+  padding: 0 96px;
+  color: #1d1d1f;
+}
+.form__title {
+  padding-top: 80px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 47px;
+}
+.form__description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.form__description-input {
+  width: 100%;
+  height: 56px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  line-height: 24px;
+  padding: 16px;
+  margin-top: 10px;
+  margin-bottom: 38px;
+}
+
+.parameters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 63px;
+  max-width: 600px;
+  width: 100%;
+}
+.parameters__description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1f;
+  margin-bottom: 9px;
+}
+.parameters__price {
+  padding: 0;
+}
+.parameters__price-input {
+  width: 222px;
+  height: 56px;
+  text-align: center;
+  padding: 0 15px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px 4px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1f;
+}
+.parameters__square {
+  padding: 0;
+}
+.parameters__square-input {
+  width: 112px;
+  height: 56px;
+  text-align: center;
+  padding: 0 15px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1f;
+}
+
+.lb1 {
+  margin: 0;
+}
+.lb1 span {
+  display: block;
+  margin-left: 55px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1f;
+}
+
+#highload1 {
+  display: none;
+}
+#highload1 + .lb1, #highload1 + .lb1::before, #highload1 + .lb1::after {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#highload1 + .lb1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 15px;
+  width: 44px;
+  height: 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#highload1 + .lb1::before {
+  display: block;
+  content: attr(data-offlabel);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #eee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+#highload1 + .lb1::after {
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+#highload1:checked + .lb1::before {
+  content: attr(data-onlabel);
+  left: 5px;
+  right: auto;
+  color: #eee;
+}
+#highload1:checked + .lb1::after {
+  left: 22px;
+  background-color: #f7f7f7;
+}
+#highload1 + .lb1 {
+  background-color: #ccc;
+}
+#highload1:checked + .lb1 {
+  background-color: #0066cc;
+}
+#highload1:checked + .lb1::before {
+  color: #eee;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 39px;
+}
+.contacts__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1f;
+}
+.contacts__phone-input, .contacts__email-input {
+  margin-top: 9px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 0 15px;
+}
+.contacts__phone-input {
+  width: 222px;
+  height: 56px;
+}
+.contacts__email-input {
+  width: 397px;
+  height: 56px;
 }
