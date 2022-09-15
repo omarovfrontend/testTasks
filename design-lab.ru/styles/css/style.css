@@ -41,6 +41,7 @@ body {
 }
 
 input {
+  font-family: "Gilroy", sans-serif;
   outline: none;
   -webkit-transition: border 0.2s linear;
   transition: border 0.2s linear;
@@ -350,7 +351,6 @@ td {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: 600;
-  font-size: 16px;
   line-height: 24px;
   color: #1d1d1f;
 }
@@ -406,4 +406,47 @@ input[type=file] {
   cursor: pointer;
   left: 0px;
   top: 0px;
+}
+
+.usability {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 38px;
+}
+.usability__description {
+  font-weight: 600;
+  line-height: 24px;
+  color: #1d1d1f;
+}
+.usability__list {
+  cursor: pointer;
+}
+.usability__list, .usability__password-input {
+  width: 309px;
+  height: 56px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 10px;
+}
+.usability__list {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1f;
+}
+.usability__password .usability__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

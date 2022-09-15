@@ -51,6 +51,7 @@ body {
 }
 
 input {
+  font-family: "Gilroy", sans-serif;
   outline: none;
   transition: border 0.2s linear;
 
@@ -367,7 +368,6 @@ td {
     display: flex;
     flex-direction: column;
     font-weight: 600;
-    font-size: 16px;
     line-height: 24px;
     color: #1d1d1f;
   }
@@ -431,4 +431,44 @@ input[type="file"] {
   cursor: pointer;
   left: 0px;
   top: 0px;
+}
+
+.usability {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+
+  &__description {
+    font-weight: 600;
+    line-height: 24px;
+    color: #1d1d1f;
+  }
+
+  &__list {
+    cursor: pointer;
+  }
+
+  &__list,
+  &__password-input {
+    width: 309px;
+    height: 56px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 10px;
+  }
+
+  &__list {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d1d1f;
+  }
+
+  &__password .usability__description {
+    display: flex;
+    flex-direction: column;
+  }
 }
