@@ -221,5 +221,59 @@
         </form>
       </div>
     </section>
+
+    <section class="gallery">
+      <div class="container">
+        <h2 class="gallery__title">Галерея</h2>
+
+        <p class="gallery__subtitle">
+          Фильтры должны фильтровать изображения без перезагрузки. Адаптивность:
+          между реперными точками — пропорциональное масштабирование, далее
+          уменьшение кол-ва фото в строке. Пролистывание должно быть по 8 фото
+          (страницами) для дектопа, по 4 фото на мобилке. Стрелки появляются
+          только при наведении на блок с фото.
+        </p>
+
+        <ul class="list">
+          <li class="list__item active" data-id="all">Все</li>
+          <li class="list__item" data-id="bath">Бани</li>
+          <li class="list__item" data-id="sauna">Сауны</li>
+          <li class="list__item" data-id="hammam">Хаммамы</li>
+        </ul>
+      </div>
+
+      <div class="blocks">
+        <div class="blocks__row">
+          <div class="blocks__item bath">
+            <img src="./images/img1.png" alt="bath" />
+          </div>
+          <div class="blocks__item bath">
+            <img src="./images/img2.png" alt="bath" />
+          </div>
+          <div class="blocks__item sauna">
+            <img src="./images/img3.png" alt="sauna" />
+          </div>
+          <div class="blocks__item sauna">
+            <img src="./images/img4.png" alt="sauna" />
+          </div>
+        </div>
+
+        <div class="blocks__row">
+          <div class="blocks__item hammam">
+            <img src="./images/img4.png" alt="hammam" />
+          </div>
+          <div class="blocks__item hammam bath">
+            <img src="./images/img5.png" alt="hammam" />
+          </div>
+          <div class="blocks__item hammam">
+            <img src="./images/img6.png" alt="hammam" />
+          </div>
+          <div class="blocks__item sauna">
+            <img src="./images/img7.png" alt="sauna" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
   </body>
 </html>
