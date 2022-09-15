@@ -548,6 +548,7 @@ input[type=file] {
 }
 
 .blocks {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,4 +578,38 @@ input[type=file] {
   max-width: 430px;
   width: 100%;
   height: auto;
+}
+.blocks:hover .slider-next,
+.blocks:hover .slider-prev {
+  opacity: 1;
+}
+
+.slider-next,
+.slider-prev {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  color: #0066cc;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.slider-next:hover,
+.slider-prev:hover {
+  color: #fff;
+  background-color: #0066cc;
+}
+
+.slider-next {
+  left: 101px;
+}
+
+.slider-prev {
+  right: 101px;
 }
