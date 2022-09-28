@@ -47,3 +47,5 @@ function getItems(className) {
     }
   })
 }
+
+// ссылка на макет - https://www.figma.com/file/oCBSoPZNXRtNqCBsTVyrs4/Test?node-id=0%3A1
